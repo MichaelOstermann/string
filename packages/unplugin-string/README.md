@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>string</h1>
+<h1>unplugin-string</h1>
 
 **Functional utilities for strings.**
 

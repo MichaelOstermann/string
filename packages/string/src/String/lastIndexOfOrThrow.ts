@@ -1,0 +1,31 @@
+import { dfdlT } from "@monstermann/dfdl"
+
+/**
+ * `String.lastIndexOfOrThrow(target, source)`
+ *
+ * Returns the index of the last occurrence of `source` string in `target` string, or throws an error if not found.
+ *
+ * ## Example
+ *
+ * ```ts
+ * import { String } from "@monstermann/string";
+ *
+ * String.lastIndexOfOrThrow("hello world hello", "hello"); // 12
+ * String.lastIndexOfOrThrow("hello world", "foo"); // throws FnError
+ * ```
+ *
+ * ```ts
+ * import { String } from "@monstermann/string";
+ *
+ * pipe("hello world hello", String.lastIndexOfOrThrow("hello")); // 12
+ * pipe("hello world", String.lastIndexOfOrThrow("foo")); // throws FnError
+ * ```
+ */
+export const lastIndexOfOrThrow: {
+    (source: string): (target: string) => number
+    (target: string, source: string): number
+} = dfdlT((a: string, b: string): number => {
+    const idx = a.lastIndexOf(b)
+    if (Number.isFinite(idx)) return idx
+    throw new Error("String.lastIndexOfOrThrow: Value not found.")
+}, 2)
