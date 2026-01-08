@@ -52,6 +52,7 @@ import { replace } from "./replace.js";
 import { replaceAll } from "./replaceAll.js";
 import { reverse } from "./reverse.js";
 import { slice } from "./slice.js";
+import { slugify } from "./slugify.js";
 import { snakeCase } from "./snakeCase.js";
 import { split } from "./split.js";
 import { startsWith } from "./startsWith.js";
@@ -115,6 +116,7 @@ declare namespace String {
         replaceAll,
         reverse,
         slice,
+        slugify,
         snakeCase,
         split,
         startsWith,

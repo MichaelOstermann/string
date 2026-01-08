@@ -78,6 +78,7 @@ export default defineConfig({
                     { link: "replaceAll", text: "replaceAll" },
                     { link: "reverse", text: "reverse" },
                     { link: "slice", text: "slice" },
+                    { link: "slugify", text: "slugify" },
                     { link: "snakeCase", text: "snakeCase" },
                     { link: "split", text: "split" },
                     { link: "startsWith", text: "startsWith" },
