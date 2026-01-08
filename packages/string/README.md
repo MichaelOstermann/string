@@ -2,7 +2,7 @@
 
 <h1>string</h1>
 
-![Minified](https://img.shields.io/badge/Minified-5.78_KB-blue?style=flat-square&labelColor=%2315161D&color=%2369a1ff) ![Minzipped](https://img.shields.io/badge/Minzipped-1.59_KB-blue?style=flat-square&labelColor=%2315161D&color=%2369a1ff)
+![Minified](https://img.shields.io/badge/Minified-6.70_KB-blue?style=flat-square&labelColor=%2315161D&color=%2369a1ff) ![Minzipped](https://img.shields.io/badge/Minzipped-2.01_KB-blue?style=flat-square&labelColor=%2315161D&color=%2369a1ff)
 
 **Functional utilities for strings.**
 

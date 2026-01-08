@@ -6,12 +6,12 @@ aside: true
 
 <Badge type="info" class="size">
     <span>Minified</span>
-    <span>5.78 KB</span>
+    <span>6.70 KB</span>
 </Badge>
 
 <Badge type="info" class="size">
     <span>Minzipped</span>
-    <span>1.59 KB</span>
+    <span>2.01 KB</span>
 </Badge>
 
 **Functional utilities for strings.**
