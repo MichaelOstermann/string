@@ -1,6 +1,8 @@
 # parseFloatOrThrow
 
-`String.parseFloatOrThrow(target)`
+```ts
+function String.parseFloatOrThrow(target: string): number
+```
 
 Parses `target` string and returns a floating point number, or throws an error if parsing fails.
 

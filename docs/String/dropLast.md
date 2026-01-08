@@ -1,6 +1,8 @@
 # dropLast
 
-`String.dropLast(target, amount)`
+```ts
+function String.dropLast(target: string, amount: number): string
+```
 
 Removes the last `amount` characters from `target` string.
 

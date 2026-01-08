@@ -1,6 +1,10 @@
 # lowerCase
 
-`String.lowerCase(target)`
+```ts
+function String.lowerCase<T extends string>(
+    target: T,
+): Lowercase<T>
+```
 
 Converts `target` string to lowercase.
 

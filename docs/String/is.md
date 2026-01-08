@@ -1,6 +1,8 @@
 # is
 
-`String.is(target)`
+```ts
+function String.is(target: unknown): target is string
+```
 
 Checks if `target` is a string.
 

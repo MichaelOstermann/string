@@ -1,6 +1,8 @@
 # test
 
-`String.test(target, source)`
+```ts
+function String.test(target: string, source: RegExp): boolean
+```
 
 Tests if `target` string matches the `source` regular expression.
 

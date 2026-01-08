@@ -1,6 +1,8 @@
 # parseFloatOr
 
-`String.parseFloatOr(target, or)`
+```ts
+function String.parseFloatOr<T>(target: string, or: T): number | T
+```
 
 Parses `target` string and returns a floating point number, or the `or` value if parsing fails.
 

@@ -1,6 +1,12 @@
 # indexOfOrElse
 
-`String.indexOfOrElse(target, source, orElse)`
+```ts
+function String.indexOfOrElse<T>(
+    target: string,
+    source: string,
+    orElse: (target: string) => T,
+): number | T
+```
 
 Returns the index of the first occurrence of `source` string in `target` string, or the result of calling `orElse` function with `target` if not found.
 

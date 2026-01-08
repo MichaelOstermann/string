@@ -1,6 +1,10 @@
 # titleCase
 
-`String.titleCase(target)`
+```ts
+function String.titleCase<T extends string>(
+    target: T,
+): TitleCase<T>
+```
 
 Converts `target` string to Title Case format.
 

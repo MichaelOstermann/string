@@ -1,6 +1,8 @@
 # parseInt
 
-`String.parseInt(target)`
+```ts
+function String.parseInt(target: string): number
+```
 
 Parses `target` string and returns an integer.
 

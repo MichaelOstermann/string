@@ -1,6 +1,12 @@
 # indexOfOr
 
-`String.indexOfOr(target, source, or)`
+```ts
+function String.indexOfOr<T>(
+    target: string,
+    source: string,
+    or: T,
+): number | T
+```
 
 Returns the index of the first occurrence of `source` string in `target` string, or the `or` value if not found.
 

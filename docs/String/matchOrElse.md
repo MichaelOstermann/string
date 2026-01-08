@@ -1,6 +1,12 @@
 # matchOrElse
 
-`String.matchOrElse(target, source, orElse)`
+```ts
+function String.matchOrElse<T>(
+    target: string,
+    source: string | RegExp,
+    orElse: (target: string) => T,
+): RegExpMatchArray | T
+```
 
 Returns the result of matching `target` string against `source` string or regular expression, or the result of calling `orElse` function with `target` if no match is found.
 

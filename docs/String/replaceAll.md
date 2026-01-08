@@ -1,6 +1,12 @@
 # replaceAll
 
-`String.replaceAll(target, search, replace)`
+```ts
+function String.replaceAll<
+    T extends string,
+    U extends string | RegExp,
+    V extends string,
+>(target: T, search: U, replacement: V): ReplaceAll<T, U, V>
+```
 
 Replaces all occurrences of `search` string or regular expression in `target` string with `replace` string.
 

@@ -1,6 +1,11 @@
 # parseFloatOrElse
 
-`String.parseFloatOrElse(target, orElse)`
+```ts
+function String.parseFloatOrElse<T>(
+    target: string,
+    orElse: (target: string) => T,
+): number | T
+```
 
 Parses `target` string and returns a floating point number, or the result of calling `orElse` function with `target` if parsing fails.
 

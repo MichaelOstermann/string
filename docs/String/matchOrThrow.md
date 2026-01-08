@@ -1,6 +1,11 @@
 # matchOrThrow
 
-`String.matchOrThrow(target, source)`
+```ts
+function String.matchOrThrow(
+    target: string,
+    source: string | RegExp,
+): RegExpMatchArray
+```
 
 Returns the result of matching `target` string against `source` string or regular expression, or throws an error if no match is found.
 

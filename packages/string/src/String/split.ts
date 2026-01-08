@@ -2,25 +2,33 @@ import type { Split } from "string-ts"
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.split(target, source)`
+ * # split
+ *
+ * ```ts
+ * function String.split<T extends string, U extends RegExp>(
+ *     target: T,
+ *     delimiter: U,
+ * ): string[]
+ * ```
  *
  * Splits `target` string into an array of substrings using `source` string or regular expression as the separator.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.split("hello,world,test", ","); // ["hello", "world", "test"]
  * String.split("hello world", /\s+/); // ["hello", "world"]
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello,world,test", String.split(",")); // ["hello", "world", "test"]
  * pipe("hello world", String.split(/\s+/)); // ["hello", "world"]
  * ```
+ *
  */
 export const split: {
     <U extends string>(delimiter: U): <T extends string>(target: T) => Split<T, U>

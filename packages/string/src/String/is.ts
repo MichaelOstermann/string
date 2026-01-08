@@ -1,13 +1,17 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.is(target)`
+ * # is
+ *
+ * ```ts
+ * function String.is(target: unknown): target is string
+ * ```
  *
  * Checks if `target` is a string.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.is("hello"); // true
@@ -15,13 +19,14 @@ import { dfdlT } from "@monstermann/dfdl"
  * String.is(null); // false
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello", String.is()); // true
  * pipe(123, String.is()); // false
  * pipe(null, String.is()); // false
  * ```
+ *
  */
 export const is: {
     (): (target: unknown) => target is string

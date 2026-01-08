@@ -1,6 +1,11 @@
 # repeat
 
-`String.repeat(target, amount)`
+```ts
+function String.repeat<T extends string, U extends number>(
+    target: T,
+    amount: U,
+): Repeat<T, U>
+```
 
 Repeats `target` string `amount` times.
 

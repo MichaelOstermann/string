@@ -1,6 +1,8 @@
 # trim
 
-`String.trim(target)`
+```ts
+function String.trim<T extends string>(target: T): Trim<T>
+```
 
 Removes whitespace from both ends of `target` string.
 

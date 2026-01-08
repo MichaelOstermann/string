@@ -1,6 +1,8 @@
 # length
 
-`String.length(target)`
+```ts
+function String.length(target: string): number
+```
 
 Returns the length of `target` string.
 

@@ -1,6 +1,11 @@
 # hasAny
 
-`String.hasAny(target, source)`
+```ts
+function String.hasAny(
+    target: string,
+    source: Iterable<string>,
+): boolean
+```
 
 Checks if `target` string contains any of the strings from the `source` iterable.
 

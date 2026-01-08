@@ -1,23 +1,32 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.padStart(target, length, fill)`
+ * # padStart
+ *
+ * ```ts
+ * function String.padStart(
+ *     target: string,
+ *     length: number,
+ *     fill: string,
+ * ): string
+ * ```
  *
  * Pads `target` string from the start with `fill` string until the result reaches the specified `length`.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.padStart("hello", 10, " "); // "     hello"
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello", String.padStart(10, " ")); // "     hello"
  * ```
+ *
  */
 export const padStart: {
     (length: number, fill: string): (target: string) => string

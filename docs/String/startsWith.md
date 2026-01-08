@@ -1,6 +1,8 @@
 # startsWith
 
-`String.startsWith(target, source)`
+```ts
+function String.startsWith(target: string, source: string): boolean
+```
 
 Checks if `target` string starts with `source` string.
 

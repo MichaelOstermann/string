@@ -1,6 +1,8 @@
 # isEmpty
 
-`String.isEmpty(target)`
+```ts
+function String.isEmpty(target: string): boolean
+```
 
 Checks if `target` string is empty.
 

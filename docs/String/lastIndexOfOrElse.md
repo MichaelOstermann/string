@@ -1,6 +1,12 @@
 # lastIndexOfOrElse
 
-`String.lastIndexOfOrElse(target, source, orElse)`
+```ts
+function String.lastIndexOfOrElse<T>(
+    target: string,
+    source: string,
+    orElse: (target: string) => T,
+): number | T
+```
 
 Returns the index of the last occurrence of `source` string in `target` string, or the result of calling `orElse` function with `target` if not found.
 

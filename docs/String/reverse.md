@@ -1,6 +1,8 @@
 # reverse
 
-`String.reverse(target)`
+```ts
+function String.reverse<T extends string>(target: T): Reverse<T>
+```
 
 Reverses the characters in `target` string.
 

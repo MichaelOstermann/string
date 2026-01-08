@@ -1,6 +1,8 @@
 # takeLast
 
-`String.takeLast(target, amount)`
+```ts
+function String.takeLast(target: string, amount: number): string
+```
 
 Takes the last `amount` characters from `target` string.
 

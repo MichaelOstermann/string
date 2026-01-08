@@ -1,6 +1,8 @@
 # parseFloat
 
-`String.parseFloat(target)`
+```ts
+function String.parseFloat(target: string): number
+```
 
 Parses `target` string and returns a floating point number.
 

@@ -1,6 +1,11 @@
 # match
 
-`String.match(target, source)`
+```ts
+function String.match(
+    target: string,
+    source: string | RegExp,
+): RegExpMatchArray | null
+```
 
 Returns the result of matching `target` string against `source` string or regular expression, or null if no match is found.
 

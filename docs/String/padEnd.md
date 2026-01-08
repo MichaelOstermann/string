@@ -1,6 +1,12 @@
 # padEnd
 
-`String.padEnd(target, length, fill)`
+```ts
+function String.padEnd(
+    target: string,
+    length: number,
+    fill: string,
+): string
+```
 
 Pads `target` string from the end with `fill` string until the result reaches the specified `length`.
 

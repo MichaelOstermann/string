@@ -1,6 +1,10 @@
 # capitalize
 
-`String.capitalize(target)`
+```ts
+function String.capitalize<T extends string>(
+    target: T,
+): Capitalize<T>
+```
 
 Capitalizes the first letter of `target` string.
 

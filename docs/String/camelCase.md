@@ -1,6 +1,10 @@
 # camelCase
 
-`String.camelCase(target)`
+```ts
+function String.camelCase<T extends string>(
+    target: T,
+): CamelCase<T>
+```
 
 Converts `target` string to camelCase format.
 

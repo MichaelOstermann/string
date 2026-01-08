@@ -1,6 +1,8 @@
 # drop
 
-`String.drop(target, amount)`
+```ts
+function String.drop(target: string, amount: number): string
+```
 
 Removes the first `amount` characters from `target` string.
 

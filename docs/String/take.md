@@ -1,6 +1,8 @@
 # take
 
-`String.take(target, amount)`
+```ts
+function String.take(target: string, amount: number): string
+```
 
 Takes the first `amount` characters from `target` string.
 

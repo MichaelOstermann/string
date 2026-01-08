@@ -2,25 +2,32 @@ import { dfdlT } from "@monstermann/dfdl"
 import { toLowerCase as apply } from "string-ts"
 
 /**
- * `String.lowerCase(target)`
+ * # lowerCase
+ *
+ * ```ts
+ * function String.lowerCase<T extends string>(
+ *     target: T,
+ * ): Lowercase<T>
+ * ```
  *
  * Converts `target` string to lowercase.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.lowerCase("HELLO WORLD"); // "hello world"
  * String.lowerCase("Hello World"); // "hello world"
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("HELLO WORLD", String.lowerCase()); // "hello world"
  * pipe("Hello World", String.lowerCase()); // "hello world"
  * ```
+ *
  */
 export const lowerCase: {
     (): <T extends string>(target: T) => Lowercase<T>

@@ -1,6 +1,12 @@
 # slice
 
-`String.slice(target, start, end?)`
+```ts
+function String.slice<
+    T extends string,
+    U extends number,
+    V extends number | undefined = undefined,
+>(target: T, start: U, end?: V): Slice<T, U, V>
+```
 
 Extracts a section of `target` string from `start` index to `end` index (exclusive). If `end` is not provided, extracts to the end of the string.
 

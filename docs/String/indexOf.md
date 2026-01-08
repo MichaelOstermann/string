@@ -1,6 +1,8 @@
 # indexOf
 
-`String.indexOf(target, source)`
+```ts
+function String.indexOf(target: string, source: string): number
+```
 
 Returns the index of the first occurrence of `source` string in `target` string, or -1 if not found.
 

@@ -1,6 +1,11 @@
 # lastIndexOfOrThrow
 
-`String.lastIndexOfOrThrow(target, source)`
+```ts
+function String.lastIndexOfOrThrow(
+    target: string,
+    source: string,
+): number
+```
 
 Returns the index of the last occurrence of `source` string in `target` string, or throws an error if not found.
 

@@ -1,6 +1,12 @@
 # replace
 
-`String.replace(target, search, replace)`
+```ts
+function String.replace<
+    T extends string,
+    U extends string | RegExp,
+    V extends string,
+>(target: T, search: U, replacement: V): Replace<T, U, V>
+```
 
 Replaces the first occurrence of `search` string or regular expression in `target` string with `replace` string.
 

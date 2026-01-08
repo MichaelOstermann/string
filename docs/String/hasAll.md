@@ -1,6 +1,11 @@
 # hasAll
 
-`String.hasAll(target, source)`
+```ts
+function String.hasAll(
+    target: string,
+    source: Iterable<string>,
+): boolean
+```
 
 Checks if `target` string contains all strings from the `source` iterable.
 

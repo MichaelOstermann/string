@@ -1,6 +1,11 @@
 # split
 
-`String.split(target, source)`
+```ts
+function String.split<T extends string, U extends RegExp>(
+    target: T,
+    delimiter: U,
+): string[]
+```
 
 Splits `target` string into an array of substrings using `source` string or regular expression as the separator.
 

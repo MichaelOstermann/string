@@ -1,20 +1,28 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.lastIndexOfOrElse(target, source, orElse)`
+ * # lastIndexOfOrElse
+ *
+ * ```ts
+ * function String.lastIndexOfOrElse<T>(
+ *     target: string,
+ *     source: string,
+ *     orElse: (target: string) => T,
+ * ): number | T
+ * ```
  *
  * Returns the index of the last occurrence of `source` string in `target` string, or the result of calling `orElse` function with `target` if not found.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.lastIndexOfOrElse("hello world hello", "hello", () => -1); // 12
  * String.lastIndexOfOrElse("hello world", "foo", (str) => str.length); // 11
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe(
@@ -27,6 +35,7 @@ import { dfdlT } from "@monstermann/dfdl"
  *     String.lastIndexOfOrElse("foo", (str) => str.length),
  * ); // 11
  * ```
+ *
  */
 export const lastIndexOfOrElse: {
     <T>(source: string, orElse: (target: string) => T): (target: string) => number | T

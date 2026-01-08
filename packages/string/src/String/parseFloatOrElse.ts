@@ -1,20 +1,27 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.parseFloatOrElse(target, orElse)`
+ * # parseFloatOrElse
+ *
+ * ```ts
+ * function String.parseFloatOrElse<T>(
+ *     target: string,
+ *     orElse: (target: string) => T,
+ * ): number | T
+ * ```
  *
  * Parses `target` string and returns a floating point number, or the result of calling `orElse` function with `target` if parsing fails.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.parseFloatOrElse("3.14", () => 0); // 3.14
  * String.parseFloatOrElse("abc", (str) => str.length); // 3
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe(
@@ -27,6 +34,7 @@ import { dfdlT } from "@monstermann/dfdl"
  *     String.parseFloatOrElse((str) => str.length),
  * ); // 3
  * ```
+ *
  */
 export const parseFloatOrElse: {
     <T>(orElse: (target: string) => T): (target: string) => number | T

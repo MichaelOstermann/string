@@ -1,6 +1,11 @@
 # indexOfOrThrow
 
-`String.indexOfOrThrow(target, source)`
+```ts
+function String.indexOfOrThrow(
+    target: string,
+    source: string,
+): number
+```
 
 Returns the index of the first occurrence of `source` string in `target` string, or throws an error if not found.
 

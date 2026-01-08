@@ -1,6 +1,12 @@
 # matchOr
 
-`String.matchOr(target, source, or)`
+```ts
+function String.matchOr<T>(
+    target: string,
+    source: string | RegExp,
+    or: T,
+): RegExpMatchArray | T
+```
 
 Returns the result of matching `target` string against `source` string or regular expression, or the `or` value if no match is found.
 

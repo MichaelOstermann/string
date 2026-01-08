@@ -1,6 +1,8 @@
 # has
 
-`String.has(target, source)`
+```ts
+function String.has(target: string, source: string): boolean
+```
 
 Checks if `target` string contains `source` string.
 

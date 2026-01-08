@@ -1,6 +1,8 @@
 # parseIntOr
 
-`String.parseIntOr(target, or)`
+```ts
+function String.parseIntOr<T>(target: string, or: T): number | T
+```
 
 Parses `target` string and returns an integer, or the `or` value if parsing fails.
 

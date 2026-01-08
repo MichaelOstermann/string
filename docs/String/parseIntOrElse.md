@@ -1,6 +1,11 @@
 # parseIntOrElse
 
-`String.parseIntOrElse(target, orElse)`
+```ts
+function String.parseIntOrElse<T>(
+    target: string,
+    orElse: (target: string) => T,
+): number | T
+```
 
 Parses `target` string and returns an integer, or the result of calling `orElse` function with `target` if parsing fails.
 

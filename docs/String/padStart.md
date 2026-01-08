@@ -1,6 +1,12 @@
 # padStart
 
-`String.padStart(target, length, fill)`
+```ts
+function String.padStart(
+    target: string,
+    length: number,
+    fill: string,
+): string
+```
 
 Pads `target` string from the start with `fill` string until the result reaches the specified `length`.
 

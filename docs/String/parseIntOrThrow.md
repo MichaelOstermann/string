@@ -1,6 +1,8 @@
 # parseIntOrThrow
 
-`String.parseIntOrThrow(target)`
+```ts
+function String.parseIntOrThrow(target: string): number
+```
 
 Parses `target` string and returns an integer, or throws an error if parsing fails.
 

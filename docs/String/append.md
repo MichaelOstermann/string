@@ -1,6 +1,11 @@
 # append
 
-`String.append(target, source)`
+```ts
+function String.append(
+    target: string,
+    source: Iterable<string>,
+): string
+```
 
 Appends `source` or strings from `source` iterable to the end of `target` string.
 

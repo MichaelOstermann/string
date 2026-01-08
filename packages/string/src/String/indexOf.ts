@@ -1,23 +1,28 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.indexOf(target, source)`
+ * # indexOf
+ *
+ * ```ts
+ * function String.indexOf(target: string, source: string): number
+ * ```
  *
  * Returns the index of the first occurrence of `source` string in `target` string, or -1 if not found.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.indexOf("hello world", "world"); // 6
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello world", String.indexOf("world")); // 6
  * ```
+ *
  */
 export const indexOf: {
     (source: string): (target: string) => number

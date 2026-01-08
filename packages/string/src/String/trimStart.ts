@@ -2,23 +2,30 @@ import type { TrimStart } from "string-ts"
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.trimStart(target)`
+ * # trimStart
+ *
+ * ```ts
+ * function String.trimStart<T extends string>(
+ *     target: T,
+ * ): TrimStart<T>
+ * ```
  *
  * Removes whitespace from the start of `target` string.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.trimStart("  hello world  "); // "hello world  "
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("  hello world  ", String.trimStart()); // "hello world  "
  * ```
+ *
  */
 export const trimStart: {
     (): <T extends string>(target: T) => TrimStart<T>

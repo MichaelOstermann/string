@@ -1,6 +1,11 @@
 # hasNone
 
-`String.hasNone(target, source)`
+```ts
+function String.hasNone(
+    target: string,
+    source: Iterable<string>,
+): boolean
+```
 
 Checks if `target` string contains none of the strings from the `source` iterable.
 

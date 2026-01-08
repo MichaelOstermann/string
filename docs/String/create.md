@@ -1,6 +1,8 @@
 # create
 
-`String.create(target)`
+```ts
+function String.create(value?: any): string
+```
 
 An alias for `String(target)`.
 

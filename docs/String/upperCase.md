@@ -1,6 +1,10 @@
 # upperCase
 
-`String.upperCase(target)`
+```ts
+function String.upperCase<T extends string>(
+    target: T,
+): Uppercase<T>
+```
 
 Converts `target` string to uppercase.
 

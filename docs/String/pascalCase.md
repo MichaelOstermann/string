@@ -1,6 +1,10 @@
 # pascalCase
 
-`String.pascalCase(target)`
+```ts
+function String.pascalCase<T extends string>(
+    target: T,
+): PascalCase<T>
+```
 
 Converts `target` string to PascalCase format.
 

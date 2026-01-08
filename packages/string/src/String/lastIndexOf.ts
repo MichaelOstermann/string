@@ -1,23 +1,28 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.lastIndexOf(target, source)`
+ * # lastIndexOf
+ *
+ * ```ts
+ * function String.lastIndexOf(target: string, source: string): number
+ * ```
  *
  * Returns the index of the last occurrence of `source` string in `target` string, or -1 if not found.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.lastIndexOf("hello world hello", "hello"); // 12
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello world hello", String.lastIndexOf("hello")); // 12
  * ```
+ *
  */
 export const lastIndexOf: {
     (source: string): (target: string) => number

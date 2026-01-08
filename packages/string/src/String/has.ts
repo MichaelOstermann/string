@@ -1,23 +1,28 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.has(target, source)`
+ * # has
+ *
+ * ```ts
+ * function String.has(target: string, source: string): boolean
+ * ```
  *
  * Checks if `target` string contains `source` string.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.has("hello world", "world"); // true
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello world", String.has("world")); // true
  * ```
+ *
  */
 export const has: {
     (source: string): (target: string) => boolean

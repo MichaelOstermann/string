@@ -1,6 +1,8 @@
 # endsWith
 
-`String.endsWith(target, source)`
+```ts
+function String.endsWith(target: string, source: string): boolean
+```
 
 Checks if `target` string ends with `source` string.
 

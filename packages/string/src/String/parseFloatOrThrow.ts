@@ -1,25 +1,30 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.parseFloatOrThrow(target)`
+ * # parseFloatOrThrow
+ *
+ * ```ts
+ * function String.parseFloatOrThrow(target: string): number
+ * ```
  *
  * Parses `target` string and returns a floating point number, or throws an error if parsing fails.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.parseFloatOrThrow("3.14"); // 3.14
  * String.parseFloatOrThrow("abc"); // throws FnError
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("3.14", String.parseFloatOrThrow()); // 3.14
  * pipe("abc", String.parseFloatOrThrow()); // throws FnError
  * ```
+ *
  */
 export const parseFloatOrThrow: {
     (): (target: string) => number

@@ -1,6 +1,8 @@
 # lastIndexOf
 
-`String.lastIndexOf(target, source)`
+```ts
+function String.lastIndexOf(target: string, source: string): number
+```
 
 Returns the index of the last occurrence of `source` string in `target` string, or -1 if not found.
 

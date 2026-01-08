@@ -1,6 +1,11 @@
 # prepend
 
-`String.prepend(target, source)`
+```ts
+function String.prepend(
+    target: string,
+    source: Iterable<string>,
+): string
+```
 
 Prepends `string` or strings from `source` iterable to the beginning of `target` string.
 

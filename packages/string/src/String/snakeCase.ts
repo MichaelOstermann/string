@@ -3,25 +3,32 @@ import { dfdlT } from "@monstermann/dfdl"
 import { snakeCase as apply } from "string-ts"
 
 /**
- * `String.snakeCase(target)`
+ * # snakeCase
+ *
+ * ```ts
+ * function String.snakeCase<T extends string>(
+ *     target: T,
+ * ): SnakeCase<T>
+ * ```
  *
  * Converts `target` string to snake_case format.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.snakeCase("hello world"); // "hello_world"
  * String.snakeCase("helloWorld"); // "hello_world"
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello world", String.snakeCase()); // "hello_world"
  * pipe("helloWorld", String.snakeCase()); // "hello_world"
  * ```
+ *
  */
 export const snakeCase: {
     (): <T extends string>(target: T) => SnakeCase<T>

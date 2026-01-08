@@ -1,6 +1,10 @@
 # trimStart
 
-`String.trimStart(target)`
+```ts
+function String.trimStart<T extends string>(
+    target: T,
+): TrimStart<T>
+```
 
 Removes whitespace from the start of `target` string.
 

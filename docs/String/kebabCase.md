@@ -1,6 +1,10 @@
 # kebabCase
 
-`String.kebabCase(target)`
+```ts
+function String.kebabCase<T extends string>(
+    target: T,
+): KebabCase<T>
+```
 
 Converts `target` string to kebab-case format.
 

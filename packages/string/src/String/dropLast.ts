@@ -1,23 +1,28 @@
 import { dfdlT } from "@monstermann/dfdl"
 
 /**
- * `String.dropLast(target, amount)`
+ * # dropLast
+ *
+ * ```ts
+ * function String.dropLast(target: string, amount: number): string
+ * ```
  *
  * Removes the last `amount` characters from `target` string.
  *
  * ## Example
  *
- * ```ts
+ * ```ts [data-first]
  * import { String } from "@monstermann/string";
  *
  * String.dropLast("hello world", 6); // "hello"
  * ```
  *
- * ```ts
+ * ```ts [data-last]
  * import { String } from "@monstermann/string";
  *
  * pipe("hello world", String.dropLast(6)); // "hello"
  * ```
+ *
  */
 export const dropLast: {
     (amount: number): (target: string) => string
