@@ -34,6 +34,7 @@ export default defineConfig({
                     { link: "camelCase", text: "camelCase" },
                     { link: "capitalize", text: "capitalize" },
                     { link: "constantCase", text: "constantCase" },
+                    { link: "deburr", text: "deburr" },
                     { link: "drop", text: "drop" },
                     { link: "dropLast", text: "dropLast" },
                     { link: "empty", text: "empty" },

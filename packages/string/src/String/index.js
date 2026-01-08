@@ -9,6 +9,7 @@ import { camelCase } from "./camelCase.js";
 import { capitalize } from "./capitalize.js";
 import { constantCase } from "./constantCase.js";
 import { create } from "./create.js";
+import { deburr } from "./deburr.js";
 import { drop } from "./drop.js";
 import { dropLast } from "./dropLast.js";
 import { endsWith } from "./endsWith.js";
@@ -69,6 +70,7 @@ export const String = {
     capitalize,
     constantCase,
     create,
+    deburr,
     drop,
     dropLast,
     endsWith,
