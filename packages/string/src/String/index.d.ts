@@ -22,6 +22,7 @@ import { indexOfOr } from "./indexOfOr.js";
 import { indexOfOrElse } from "./indexOfOrElse.js";
 import { indexOfOrThrow } from "./indexOfOrThrow.js";
 import { is } from "./is.js";
+import { isASCII } from "./isASCII.js";
 import { isEmpty } from "./isEmpty.js";
 import { kebabCase } from "./kebabCase.js";
 import { lastIndexOf } from "./lastIndexOf.js";
@@ -84,6 +85,7 @@ declare namespace String {
         indexOfOrElse,
         indexOfOrThrow,
         is,
+        isASCII,
         isEmpty,
         kebabCase,
         lastIndexOf,

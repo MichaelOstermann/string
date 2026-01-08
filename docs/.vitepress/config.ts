@@ -48,6 +48,7 @@ export default defineConfig({
                     { link: "indexOfOrElse", text: "indexOfOrElse" },
                     { link: "indexOfOrThrow", text: "indexOfOrThrow" },
                     { link: "is", text: "is" },
+                    { link: "isASCII", text: "isASCII" },
                     { link: "isEmpty", text: "isEmpty" },
                     { link: "kebabCase", text: "kebabCase" },
                     { link: "lastIndexOf", text: "lastIndexOf" },
