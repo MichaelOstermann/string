@@ -13,6 +13,7 @@ import { deburr } from "./deburr.js";
 import { drop } from "./drop.js";
 import { dropLast } from "./dropLast.js";
 import { endsWith } from "./endsWith.js";
+import { graphemes } from "./graphemes.js";
 import { has } from "./has.js";
 import { hasAll } from "./hasAll.js";
 import { hasAny } from "./hasAny.js";
@@ -77,6 +78,7 @@ declare namespace String {
         drop,
         dropLast,
         endsWith,
+        graphemes,
         has,
         hasAll,
         hasAny,

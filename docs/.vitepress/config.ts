@@ -39,6 +39,7 @@ export default defineConfig({
                     { link: "dropLast", text: "dropLast" },
                     { link: "empty", text: "empty" },
                     { link: "endsWith", text: "endsWith" },
+                    { link: "graphemes", text: "graphemes" },
                     { link: "has", text: "has" },
                     { link: "hasAll", text: "hasAll" },
                     { link: "hasAny", text: "hasAny" },
