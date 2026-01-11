@@ -20,7 +20,7 @@
     },
     "packages/string": {
       "name": "@monstermann/string",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "dependencies": {
         "@monstermann/dfdl": "^0.1.0",
         "string-ts": "^2.2.1",
@@ -28,7 +28,7 @@
     },
     "packages/unplugin-string": {
       "name": "@monstermann/unplugin-string",
-      "version": "0.0.1",
+      "version": "0.1.0",
       "dependencies": {
         "@monstermann/tree-shake-import-namespaces": "^0.3.0",
         "unplugin": "^2.3.4",
