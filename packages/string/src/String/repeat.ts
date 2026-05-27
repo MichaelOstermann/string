@@ -32,5 +32,5 @@ export const repeat: {
     <U extends number>(amount: U): <T extends string>(target: T) => Repeat<T, U>
     <T extends string, U extends number>(target: T, amount: U): Repeat<T, U>
 } = dfdlT(<T extends string, U extends number>(target: T, amount: U): Repeat<T, U> => {
-    return target.repeat(amount)
+    return target.repeat(amount) as Repeat<T, U>
 }, 2)
